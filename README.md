@@ -1,7 +1,7 @@
 # Wikipedia typing game
 version: 0.01a
 
-## INFOMATION 
+## INFORMATION 
 Language: 
 - Python
 
