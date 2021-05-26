@@ -7,6 +7,7 @@ Language:
 
 External modules:
 - wikipedia
+`pip install wikipedia`
 
 ## USAGE
 Please clone this repository and execute run.py.
