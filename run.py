@@ -10,15 +10,19 @@ def run():
         # get the title from wikipedia
         title = wikipedia.random(pages=1)
 
-        try:
-            # get a summary from the title
-            content = wikipedia.page(title).summary
-        except wikipedia.exceptions.PageError:
-            print(
-                "INF: Page id {title} does not match any pages. Try another id.")
-            continue
+        if title.replace(" ", "").isalnum():
+            try:
+                # get a summary from the title
+                content = wikipedia.page(title).summary
+            except wikipedia.exceptions.PageError:
+                print(
+                    "INF: Page id {title} does not match any pages. Try another id.")
+                continue
+            else:
+                break
         else:
-            break
+            print("false ", title)
+            continue
 
     # delete contents in brackets
     re_del = re.compile(r"\(.*?\)")
