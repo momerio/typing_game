@@ -22,7 +22,7 @@ def run():
 
     # delete contents in brackets
     re_del = re.compile(r"\(.*?\)")
-    re_del_spaces = re.compile(r" {2}")
+    re_del_spaces = re.compile(r" {2,}")
     content_without_brackets = re_del.sub("", content)
 
     # sentence split
@@ -34,10 +34,12 @@ def run():
     sentences = [sentence+"." for sentence in sentences]
     # print("DEBUG INF:sentences:", sentences)
 
+    typing_sentence = sentences[0]
+
     ########### typing ###########
     print(f'TITLE: "{title}"')
     print()
-    print(sentences[0])
+    print(typing_sentence)
 
     print()
     print("LET'S TYPE! >>")
