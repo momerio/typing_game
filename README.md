@@ -1,12 +1,13 @@
 # Wikipedia typing game
 version: 0.01a
 
-## INFOMATION 
+## INFORMATION 
 Language: 
 - Python
 
 External modules:
 - wikipedia
+`pip install wikipedia`
 
 ## USAGE
 Please clone this repository and execute run.py.
