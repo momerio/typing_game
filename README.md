@@ -1,5 +1,5 @@
 # Wikipedia typing game
-version: 0.01a
+version: 0.02a
 
 ## INFORMATION 
 Language: 
