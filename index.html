@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia Typing Game</title>
+</head>
+
+<body>
+  <p>YOUR TYPE:</p>
+  <p id="type-text"></p>
+
+
+
+  <script>
+    // キー入力処理
+
+    var types = "";
+
+    document.addEventListener('keypress', (event) => {
+      var keyName = event.key;
+      if (event.ctrlKey) {
+        console.log(`keypress:Ctrl + ${keyName}`);
+      }
+      types += keyName;
+      console.log(types);
+
+      var elem = document.getElementById("type-text");
+      elem.innerHTML = "<p style='color: blue;'>" + types + "</p>";
+
+    });
+  </script>
+  </head>
+
+  <body>
+  </body>
+
+</html>
