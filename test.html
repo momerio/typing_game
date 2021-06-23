@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Typing Game</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+        function callback(json) {
+            $("#result").html("Get from Wikipedia : " + json.answer);
+        }
+
+        function send() {
+            $("#result").html("取得中……");
+            var s = document.createElement('script');
+            s.src = '/cgi-bin/gate.py';
+            document.body.appendChild(s);
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1" onsubmit="return send()">
+        <input type="submit" value="取得" />
+    </form>
+    <div id="result"></div>
+</body>
+
+
+</body>
+
+</html>
