@@ -10,6 +10,8 @@ External modules:
 `pip install wikipedia`
 
 ## USAGE
+### Local
+
 First, you have to run _run_server.py_ (because of server execution). 
 
 Second, you have to run _index.html_ in your web browser.
