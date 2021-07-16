@@ -24,7 +24,7 @@
     }
 
     function send() {
-      $("#answer-text").html("取得中……");
+      $("#answer-text").html("now loading……");
       var s = document.createElement('script');
       s.src = '/cgi-bin/gate.py';
       document.body.appendChild(s);
@@ -35,7 +35,7 @@
 
 <body>
   <form name="form1" onsubmit="return send()">
-    <input type="submit" value="取得" />
+    <input type="submit" value="Start" />
   </form>
   <p>TEXT:</p>
   <p id="answer-text"></p>
@@ -47,9 +47,6 @@
 
   <script>
     // input key processing
-
-
-
     document.getElementById("answer-text").innerHTML = `<p>${answer}</p>`;
 
     //when key pressed
