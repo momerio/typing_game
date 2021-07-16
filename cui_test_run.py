@@ -1,3 +1,6 @@
+"""
+CUI Test Version
+"""
 import wikipedia
 import re
 
