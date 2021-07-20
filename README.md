@@ -19,3 +19,7 @@ Second, you have to run _index.html_ in your web browser.
 Finaly, you have a fun!
 
 If not installed above modules, please you install them before to execute it.
+
+### Web
+
+*We are planning to support it.*
