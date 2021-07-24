@@ -23,3 +23,7 @@ If not installed above modules, please you install them before to execute it.
 ### Web
 
 *We are planning to support it.*
+
+## LICENSE
+
+MIT License
